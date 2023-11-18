@@ -25,20 +25,44 @@
     <main class="container my-4">
         <section>
             <h2>Latest Discussions</h2>
-            <div class="discussion">
-                <h3>Flight Delay Compensation</h3>
-                <p>Has anyone successfully claimed compensation for a flight delay?</p>
-                <p class="author">Posted by John Doe</p>
-            </div>
+
+            
+            <!-- Example of a discussion post -->
+            <div class="discussion border p-3 mb-3">
+              <!-- User icon, name, and post date -->
+              <div class="d-flex align-items-center mb-3">
+                  <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;"> <!-- User icon image -->
+                  <div>
+                      <strong>John Doe</strong>
+                      <span class="ms-2 text-muted">Posted on 18 Nov 2023</span> <!-- Post date -->
+                  </div>
+              </div>
+          
+              <!-- Post photo -->
+              <img src="../src/components/images/post_photo.jpg" alt="Post Photo" class="img-fluid mb-3"> <!-- Post photo image -->
+          
+              <!-- Post content -->
+              <h3>Flight Delay Compensation</h3>
+              <p>Has anyone successfully claimed compensation for a flight delay?</p>
+          
+              <!-- Interaction buttons -->
+              <div class="d-flex justify-content-start">
+                  <button class="btn btn-primary btn-sm me-2">Like</button>
+                  <button class="btn btn-secondary btn-sm me-2">Comment</button>
+                  <button class="btn btn-success btn-sm">Share</button>
+              </div>
+          </div>
+          
+              
+            <!-- Additional discussions here -->
+        </section>
+    </main>
 
     <footer class="text-center p-3 bg-light">
         <p>&copy; 2023 Skywallet. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
-  <footer>
-    <p>&copy; 2023 Skywallet. All rights reserved.</p>
-  </footer>
-
-  <script src="../src/components/sidebar.js"></script>
+    <script src="../src/components/sidebar.js"></script>
 </body>
 </html>
+
