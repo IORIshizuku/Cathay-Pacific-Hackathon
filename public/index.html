@@ -30,18 +30,37 @@
         <section>
             <h2>Latest Discussions</h2>
 
-            
             <!-- Example of a discussion post -->
             <div class="discussion border p-3 mb-3">
-              <!-- User icon, name, and post date -->
-              <div class="d-flex align-items-center mb-3">
-                  <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;"> <!-- User icon image -->
-                  <div>
-                      <strong>John Doe</strong>
-                      <span class="ms-2 text-muted">Posted on 18 Nov 2023, in Osaka, Japan</span> <!-- Post date -->
+              <!-- Top bar for user details and more options -->
+              <div class="d-flex justify-content-between mb-3">
+                <!-- User details -->
+                <div class="d-flex align-items-center">
+                    <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <div>
+                        <strong>John Doe</strong>
+                        <span class="ms-2 text-muted">Posted on 18 Nov 2023</span>
+                    </div>
+                </div>
+
+                <!-- More options button container -->
+                <div class="position-relative">
+                  <button class="more-options-button" aria-label="More options">&#8230;</button> <!-- Three dots character -->
+                  
+                  <!-- Dropdown menu -->
+                  <div class="dropdown-menu" aria-labelledby="more-options-button">
+                      <a class="dropdown-item" href="#">Report</a>
+                      <a class="dropdown-item" href="#">Add to Favorite</a>
+                      <a class="dropdown-item" href="#">Copy Link to...</a>
+                      <a class="dropdown-item" href="#">About This Account</a>
+                      <a class="dropdown-item" href="#">Follow</a>
+                      <a class="dropdown-item" href="#">Unfollow</a>
                   </div>
-              </div>
-          
+                </div>
+
+            </div>
+            
+            
               <!-- Post photo -->
               <div class="d-flex">
                 <!-- Post photo -->
