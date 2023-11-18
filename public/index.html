@@ -23,9 +23,17 @@
     </nav>
 
     <header class="text-center p-4 header-black">
-        <a href="https://www.hkexpress.com/zh-hk/?utm_source=google&utm_medium=paidsearch&gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p8QAQpdoinN2Rg3JcKk1QZKlxifUMTWsedCQHCWiCemt1-p6A79J4RoCXR0QAvD_BwE" target="_blank">
-          <img src="../src/components/images/HKE_Logo_EN_RGB_reversed.png" alt="HK Express" class="header-logo">
-        </a>
+        <div class="container d-flex justify-content-between align-items-center"></div>
+            <a href="https://www.hkexpress.com/zh-hk/?utm_source=google&utm_medium=paidsearch&gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p8QAQpdoinN2Rg3JcKk1QZKlxifUMTWsedCQHCWiCemt1-p6A79J4RoCXR0QAvD_BwE" target="_blank">
+                <img src="../src/components/images/HKE_Logo_EN_RGB_reversed.png" alt="HK Express" class="header-logo">
+            </a>
+            <span>
+                <form class="header-search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Go</button>
+                </form>
+            </span>
+        </div>
     </header>
     
     <main class="container my-4">
@@ -53,7 +61,7 @@
             </div>
             <div class="d-flex">
                 <div>
-                  <img src="../src/components/images/post_photo.jpg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;"> <!-- Post photo image -->
+                  <img src="../src/components/images/osaka.jpg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;">
                 </div>
                 <div class="comment-section ms-3">
                     <h3>Comments</h3>
@@ -81,8 +89,8 @@
                     </div>
                 </div>
               </div>
-              <h4>Flight Delay Compensation</h4>
-              <p>Has anyone successfully claimed compensation for a flight delay?</p>
+              <h4>Exploring the Magnificence of Osaka Castle</h4>
+              <p>Osaka Castle stands as a timeless symbol of Japan's rich history and architectural brilliance. Located in the heart of Osaka, this majestic castle attracts travelers from around the world with its grandeur and fascinating stories. Join us on a virtual journey as we explore the wonders of Osaka Castle and the captivating experiences it offers.</p>
               <div class="d-flex justify-content-start">
                   <button class="btn btn-primary btn-sm me-2">Like</button>
                   <button class="btn btn-secondary btn-sm me-2">Comment</button>
@@ -90,6 +98,126 @@
                   <button class="btn btn-warning btn-sm" onclick="window.location.href='book-flight.html'">Book Flight</button>
               </div>
           </div>
+
+          <div class="discussion border p-3 mb-3">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                  <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;">
+                  <div>
+                      <strong>Franklin Poon</strong>
+                      <span class="ms-2 text-muted">Posted on 16 Nov 2023</span>
+                      <span class="ms-2 text-muted">London, England</span>
+                  </div>
+              </div>
+              <div class="position-relative">
+                <button class="more-options-button" aria-label="More options">&#8230;</button>
+                <div class="dropdown-menu" aria-labelledby="more-options-button">
+                    <a class="dropdown-item" href="#">Report</a>
+                    <a class="dropdown-item" href="#">Add to Favorite</a>
+                    <a class="dropdown-item" href="#">Copy Link to...</a>
+                    <a class="dropdown-item" href="#">About This Account</a>
+                </div>
+              </div>
+          </div>
+          <div class="d-flex">
+              <div>
+                <img src="../src/components/images/london.jpeg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;">
+              </div>
+              <div class="comment-section ms-3">
+                  <h3>Comments</h3>
+                  <ul id="commentList" class="comments-list">
+                      <li class="comment">
+                          <div class="comment-user">
+                              <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                              <strong>Janet Smith</strong>
+                          </div>
+                          <p class="comment-text">Big Ben's enchanting melody and breathtaking views make it an unforgettable London experience!</p>
+                      </li>
+                      <li class="comment">
+                          <div class="comment-user">
+                              <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                              <strong>Micheal Jackson</strong>
+                          </div>
+                          <p class="comment-text">The impressive architecture of Big Ben is a testament to London's timeless allure.</p>
+                      </li>
+                  </ul>
+                  <div class="comment-form-container ms-3">
+                      <form id="commentForm" class="comment-form" onsubmit="submitComment(event)">
+                          <input type="text" id="commentInput" class="form-control mt-3" placeholder="Write a comment...">
+                          <button type="submit" class="btn btn-primary mt-2" style="background-color: rgb(115, 5, 115);">Submit</button>
+                      </form>
+                  </div>
+              </div>
+            </div>
+            <h4>Timeless Majesty: Exploring London's Big Clock Tower</h4>
+            <p>London's Big Clock Tower, famously known as Big Ben, is an iconic landmark that encapsulates the spirit of the city. Standing tall beside the River Thames, its majestic presence leaves visitors in awe. As we approached the tower, its intricate Victorian Gothic architecture took our breath away. Climbing the steps, we were rewarded with panoramic views of London's sprawling cityscape. The chimes of the colossal clock resonated through the air, adding to the magical ambiance. Big Ben truly embodies the timeless charm of London, a must-visit destination for anyone seeking a glimpse into the city's rich history and architectural grandeur.</p>
+            <div class="d-flex justify-content-start">
+                <button class="btn btn-primary btn-sm me-2">Like</button>
+                <button class="btn btn-secondary btn-sm me-2">Comment</button>
+                <button class="btn btn-success btn-sm me-2">Share</button>
+                <button class="btn btn-warning btn-sm" onclick="window.location.href='book-flight.html'">Book Flight</button>
+            </div>
+        </div>
+
+        <div class="discussion border p-3 mb-3">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                  <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;">
+                  <div>
+                      <strong>Yoasobi</strong>
+                      <span class="ms-2 text-muted">Posted on 11 Nov 2023</span>
+                      <span class="ms-2 text-muted">Los Angeles, America</span>
+                  </div>
+              </div>
+              <div class="position-relative">
+                <button class="more-options-button" aria-label="More options">&#8230;</button>
+                <div class="dropdown-menu" aria-labelledby="more-options-button">
+                    <a class="dropdown-item" href="#">Report</a>
+                    <a class="dropdown-item" href="#">Add to Favorite</a>
+                    <a class="dropdown-item" href="#">Copy Link to...</a>
+                    <a class="dropdown-item" href="#">About This Account</a>
+                </div>
+              </div>
+          </div>
+          <div class="d-flex">
+              <div>
+                <img src="../src/components/images/los_angeles.jpeg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;">
+              </div>
+              <div class="comment-section ms-3">
+                  <h3>Comments</h3>
+                  <ul id="commentList" class="comments-list">
+                      <li class="comment">
+                          <div class="comment-user">
+                              <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                              <strong>Lee Ka Chiu</strong>
+                          </div>
+                          <p class="comment-text">The night view of Los Angeles is a spectacle that leaves you in awe of its vibrant energy!</p>
+                      </li>
+                      <li class="comment">
+                          <div class="comment-user">
+                              <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                              <strong>Kary Lam</strong>
+                          </div>
+                          <p class="comment-text">The twinkling lights of the city create a magical atmosphere that you won't want to miss.</p>
+                      </li>
+                  </ul>
+                  <div class="comment-form-container ms-3">
+                      <form id="commentForm" class="comment-form" onsubmit="submitComment(event)">
+                          <input type="text" id="commentInput" class="form-control mt-3" placeholder="Write a comment...">
+                          <button type="submit" class="btn btn-primary mt-2" style="background-color: rgb(115, 5, 115);">Submit</button>
+                      </form>
+                  </div>
+              </div>
+            </div>
+            <h4>City of Lights: Embracing the Night View of Los Angeles</h4>
+            <p>Los Angeles, renowned for its glamorous lifestyle and vibrant energy, transforms into a captivating wonderland as the sun sets. The city's night view unveils a mesmerizing tapestry of lights that dance across the skyline. As darkness falls, we found ourselves enchanted by the illuminated landmarks. The iconic Hollywood sign stood proudly, casting its golden glow over the city. The glittering lights of downtown Los Angeles painted a breathtaking picture, with skyscrapers reaching for the stars. The palm-lined streets came alive with the vibrant nightlife, as restaurants, bars, and clubs illuminated the cityscape. Los Angeles at night is a spectacle that truly captures the essence of the city's captivating charm.</p>
+            <div class="d-flex justify-content-start">
+                <button class="btn btn-primary btn-sm me-2">Like</button>
+                <button class="btn btn-secondary btn-sm me-2">Comment</button>
+                <button class="btn btn-success btn-sm me-2">Share</button>
+                <button class="btn btn-warning btn-sm" onclick="window.location.href='book-flight.html'">Book Flight</button>
+            </div>
+        </div>
         </section>
     </main>
 
