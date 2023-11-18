@@ -14,6 +14,9 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="#">My Friends</a></li>
+            <li><a href="#">Liked Posts</a></li>
+            <li><a href="#">Create Post</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -35,15 +38,42 @@
                   <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 40px; height: 40px; border-radius: 50%;"> <!-- User icon image -->
                   <div>
                       <strong>John Doe</strong>
-                      <span class="ms-2 text-muted">Posted on 18 Nov 2023</span> <!-- Post date -->
+                      <span class="ms-2 text-muted">Posted on 18 Nov 2023, in Osaka, Japan</span> <!-- Post date -->
                   </div>
               </div>
           
               <!-- Post photo -->
-              <img src="../src/components/images/post_photo.jpg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;"> <!-- Post photo image -->
-          
+              <div class="d-flex">
+                <!-- Post photo -->
+                <div>
+                  <img src="../src/components/images/post_photo.jpg" alt="Post Photo" class="img-fluid mb-3 post-photo" style="width: 55vw; min-width: 330px; height: 35vw; min-height: 330px;"> <!-- Post photo image -->
+                </div>
+            
+                <!-- Comment section -->
+                <div class="comment-section ms-3">
+                    <h3>Comments</h3>
+                    <ul class="comments-list">
+                        <li class="comment">
+                            <div class="comment-user">
+                                <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                                <strong>Jane Smith</strong>
+                            </div>
+                            <p class="comment-text">That looks like an amazing trip!</p>
+                        </li>
+                        <li class="comment">
+                            <div class="comment-user">
+                                <img src="../src/components/images/user_icon.jpeg" alt="User Icon" class="user-icon me-2" style="width: 30px; height: 30px; border-radius: 50%;">
+                                <strong>Mike Johnson</strong>
+                            </div>
+                            <p class="comment-text">I had a similar experience. The delay compensation process was quite smooth.</p>
+                        </li>
+                        <!-- Add more comments here -->
+                    </ul>
+                </div>
+              </div>
+
               <!-- Post content -->
-              <h3>Flight Delay Compensation</h3>
+              <h4>Flight Delay Compensation</h4>
               <p>Has anyone successfully claimed compensation for a flight delay?</p>
           
               <!-- Interaction buttons -->
