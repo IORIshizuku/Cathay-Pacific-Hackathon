@@ -3,7 +3,7 @@
   top: 10px;
   left: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   z-index: 2;
   background-color: transparent;
@@ -11,7 +11,7 @@
 }
 
 .toggle-button.show {
-  left: 160px;
+  left: 150px;
 }
 
 .sidebar {
@@ -47,6 +47,6 @@
 }
 
 .nav-link:hover {
-  text-decoration: underline; /* This adds the underline */
-  color: inherit; /* This retains the original text color */
+  text-decoration: underline;
+  color: inherit;
 }

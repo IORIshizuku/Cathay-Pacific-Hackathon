@@ -1,6 +1,7 @@
 .comment-section {
   overflow-y: auto;
-  max-height: calc(100vh - 400px); /* Adjust the maximum height as desired */
+  min-height: 200px;
+  max-height: 600px;
 }
 
 .comment-form-container {
