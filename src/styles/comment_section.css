@@ -1,0 +1,13 @@
+.comment-section {
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.comment-form-container {
+  margin-top: 20px;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 10px;
+}
