@@ -96,3 +96,18 @@ header {
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* Style for user icons */
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style for country images */
+.card-img-top {
+  width: 100%; /* Makes the image fill the container width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}

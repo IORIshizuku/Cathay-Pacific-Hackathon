@@ -22,4 +22,7 @@ function submitComment(event) {
 
     // Clear the comment input field
     commentInput.value = "";
+    document.getElementById('viewPostButton').addEventListener('click', function() {
+        window.location.href = 'user123.html';
+    });
 }
