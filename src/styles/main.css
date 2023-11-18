@@ -97,11 +97,10 @@ header {
   cursor: pointer;
 }
 
-
 /* Style for user icons */
 .user-icon {
-  width: 40px; 
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
@@ -112,4 +111,3 @@ header {
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
-
