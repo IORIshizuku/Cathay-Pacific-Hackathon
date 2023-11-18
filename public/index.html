@@ -25,21 +25,20 @@
     <main class="container my-4">
         <section>
             <h2>Latest Discussions</h2>
-            <!-- Discussions can be further styled or structured here -->
-        </section>
-    </main>
+            <div class="discussion">
+                <h3>Flight Delay Compensation</h3>
+                <p>Has anyone successfully claimed compensation for a flight delay?</p>
+                <p class="author">Posted by John Doe</p>
+            </div>
 
     <footer class="text-center p-3 bg-light">
         <p>&copy; 2023 Skywallet. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
-    <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const sidebar = document.getElementById('sidebar');
+  <footer>
+    <p>&copy; 2023 Skywallet. All rights reserved.</p>
+  </footer>
 
-        toggleButton.addEventListener('click', () => {
-            sidebar.classList.toggle('hidden');
-        });
-    </script>
+  <script src="../src/components/sidebar.js"></script>
 </body>
 </html>
