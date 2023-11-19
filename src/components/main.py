@@ -1,10 +1,15 @@
+from flask import Flask, request, jsonify
 from openai import OpenAI
 from Map import find_nearest_airport
 import os
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+app = Flask(_name_)
+OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 
-def handle_query(query, client):
+@app.route('/run_script', methods=['POST'])
+def run_script():
+    query = request.json.get('query', '')
+
     # Check if the query should be handled by the scripts
     if 'plan my trip to' in query.lower():
         # Extract the destination from the query
@@ -15,7 +20,7 @@ def handle_query(query, client):
             nearest_airport = trip_data['nearest_airport']
             flight_and_hotel_data = trip_data['flight_and_hotel_data']
         except Exception as e:
-            return f"Sorry, I couldn't process your request. {str(e)}"
+            return jsonify({"error": f"Sorry, I couldn't process your request. {str(e)}"}), 500
 
         # Combine the flight and hotel information into a response
         response = f"Here's a travel plan for {destination}:\n"
@@ -39,7 +44,7 @@ def handle_query(query, client):
         )
         response += airport_response['choices'][0]['message']['content'].strip()
 
-        return response
+        return jsonify({"response": response})
 
     else:
         # If not, send the query to GPT-3
@@ -56,12 +61,7 @@ def handle_query(query, client):
                 }
             ]
         )
-        return response['choices'][0]['message']['content'].strip()
+        return jsonify({"response": response['choices'][0]['message']['content'].strip()})
 
-while True:
-    user_input = input("User: ")
-    if user_input.lower() == 'quit':
-        break
-
-    response = handle_query(user_input, client)
-    print("Bot: ", response)
+if _name_ == "_main_":
+    app.run(debug=True)
